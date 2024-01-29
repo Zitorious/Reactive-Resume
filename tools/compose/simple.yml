@@ -31,8 +31,8 @@ services:
     volumes:
       - minio_data:/data
     environment:
-      MINIO_ROOT_USER: minioadmin
-      MINIO_ROOT_PASSWORD: minioadmin
+      MINIO_ROOT_USER: minioadmin123
+      MINIO_ROOT_PASSWORD: minioadmin123
 
   # Chrome Browser (for printing and previews)
   chrome:
@@ -80,16 +80,16 @@ services:
       REFRESH_TOKEN_SECRET: refresh_token_secret
 
       # -- Emails --
-      MAIL_FROM: noreply@localhost
+      #MAIL_FROM: noreply@localhost
       # SMTP_URL: smtp://user:pass@smtp:587 # Optional
 
       # -- Storage (Minio) --
       STORAGE_ENDPOINT: minio
       STORAGE_PORT: 9002
-      STORAGE_REGION: us-east-1 # Optional
+      #STORAGE_REGION: us-east-1 # Optional
       STORAGE_BUCKET: default
-      STORAGE_ACCESS_KEY: minioadmin
-      STORAGE_SECRET_KEY: minioadmin
+      STORAGE_ACCESS_KEY: minioadmin123
+      STORAGE_SECRET_KEY: minioadmin123
       STORAGE_USE_SSL: false
 
       # -- Cache (Redis) --
